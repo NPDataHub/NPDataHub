@@ -1,1 +1,84 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Load plotly.js into the DOM -->
+    <title>The Non-Profit Datahub</title>
+    
+    <!-- Load google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+
+    <!-- Load plotly.js-->
+    <script src='https://cdn.plot.ly/plotly-2.11.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+
+    <!-- Change Data Displayed -->
+    <script src='cluster3D.js'></script>
+
+
+    <!-- CSS for the Document -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <!-- Nav Bar -->
+    <div id="topSection">
+      <img src="NP_data.png" id="logo" class="selection">
+      <text class="textTitle">NP DataHub</text>
+      <div id="dropDownFilterNTEEPrimary" class="selection">
+        <form>
+          <select name="NTEE" class="button">
+            <option value="" disabled selected hidden> NTEE </option>
+            <option value="1"> Housing </option>
+          </select>
+        </form>
+      </div>
+      <div id="Graph" class="selection">
+        <form>
+          <select name="Graph" class="button">
+            <option value="" disabled selected hidden> Graph </option>
+            <option value="1"> RF </option>
+            <option value="2"> Cluster </option>
+          </select>
+        </form>
+      </div>
+      <div id="X" class="selection">
+        <form>
+          <select name="X" class="button">
+            <option value="" disabled selected hidden> X-Axis </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+        </form>
+      </div>
+      <div id="Y" class="selection">
+        <form >
+          <select name="Y" class="button">
+            <option value="" disabled selected hidden> Y-Axis </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+        </form>
+      </div>
+    </div>
+
+    <!-- Graph -->
+    <div id = "focalPoint">
+    </div>
+
+    <!-- Stat boxes -->
+    <div id="rightColumn">
+      <div class = "side" id = "dvOne">Total Revenues for Housing: <br/> 1400552326.0</div>
+      <div class = "side" id = "dvTwoSankey">Total Assets for Housing: <br/> 4834741214.0</div>
+      <div class = "side" id = "dvThree">Total Liabilities for Housing: <br/> 3828001195.0</div>
+    </div>
+    <div id= "footy">
+      <text> This graph ... </text>
+    </div>
+  </body>
+</html>
