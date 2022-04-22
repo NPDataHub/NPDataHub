@@ -1,4 +1,6 @@
 # Navigating NP_DataHub
+https://npdatahub.github.io/NPDataHub/
+
 For installation instructions please go to the community folder, that will also contain our new user info, community guidelines and style guidelines. For more information on our license, we invite you to read it. It is located in this root folder. 
 
 # About NP_DataHub
